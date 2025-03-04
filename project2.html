@@ -27,6 +27,8 @@
 							<!-- 	<li><a href="landing.html">Landing</a></li> -->
 							<li><a href="aboutme.html">About Me</a></li>
 							<!-- <li><a href="elements.html">Elements</a></li>-->
+							<li><a href="project1.html">Escape Rooms Project</a></li>
+							<li><a href="project2.html">Bollywood Movies Project</a></li>
 						</ul>
 
 						</ul>
@@ -36,42 +38,64 @@
 					<div id="main" class="alt">
 
 						<!-- One -->
+
+						
 							<section id="one">
 								<div class="inner">
+									
 									<header class="major">
+										
 										<h1>Bollywood Movies</h1>
 									</header>
-									<p><!-- 	Tools: Excel, Tableau<br>
+									<p>	Tools: Excel (Power Query), Tableau<br>
+								<!--	<p> 	Tools: Excel, Tableau<br>
 										Skills: Data Cleaning, Dashboarding 
 										<br>--->
 										<a href=https://public.tableau.com/views/BollywoodMovies_17409909761420/Dashboard1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link" target="blank" class="label">Tableau Public Dashboard</a>
 
 									</p>
-													<div class='tableauPlaceholder' id='viz1741044650688' style='position: relative'><noscript><a href='#'><img alt='Bollywood Movies (2005-2017) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BollywoodMovies_17409909761420&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BollywoodMovies_17409909761420&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BollywoodMovies_17409909761420&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /><param name='ignore_sticky_session' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741044650688');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
 										<h2>Overview</h2>
-										<p>words
+										<p> I grew up watching Bollywood Movies and was interested in exploring a movie dataset. I was able to find a dataset on <a href=https://www.kaggle.com/datasets/ishajangir/bollywood-movies/data" target="blank" class="label">Kaggle</a> that included Bxollywood movies released from 2005 to 2017. The dataset included Revenue & Budget in Indian Rupees, Directors, Lead Actors, Music Directors, genres, whether the movie was a remake, and a few other fields.
 											<br></p>
 											
-								
+											
 	
 										<h2>Data Preparation</h2>
-											<p>words
+											<p> I downloaded the dataset from Kaggle as a CSV file. Then, I used Power Query to extract, transform, and load the data. I opened Power Query in Excel, connected to the CSV, and hit transform to clean the data before I loaded it into the Excel worksheet. 
+												<br></br>Changes I made using Power Query:
+												<ul>- Proper case the genres by using Capitalize Each Word feature</ul>
+												<img src="images/proper.png" alt="" style="width:1000px;height:900;" data-position="center center">
+												<br></br><ul>- Changed Rom_Com to Rom Com and Love_Story to Love Story (Find underscores & Replace with a single space) </ul>
+												<img src="images/preunder.png" alt="" style="width:600;height: 300px;" data-position="center center">
+												<img src="images/Underscore.png" alt="" style="width:600;height:300px;" data-position="center center">
+												<img src="images/postunder.png" alt="" style="width:600;height:300px;" data-position="center center">
+												<br></br>
+												<ul>- Changed Love Story to Romance using Find and Replace</ul>
+												<img src="images/Love Story.png" alt="" style="width:600;height:300px;" data-position="center center">
+												
 												<br></p>
 
+
+
 										<h2>Dashboard</h2>
-												<p>words
-													<br></p>
+											<!----	<p> 
+													<br></p>--->
+													<img src="images/bollydash.png" alt="" style="width:1000px;height:900;" data-position="center center">
 
+										
 
-
-										<h2>Conclusion</h2>
-													<p>words
+										<h2>Insights</h2>
+													<p> An interesting find from the dashboard was that half of the movies Priyadarshan, one of the top 10 directors by revenue, made from 2005-2017 were remakes. It was also interesting to see that Akshay Kumar had 48 movies within 12 years in which he was the lead actor, meaning he filmed about 4 movies per year.
+														Using the tooltip for Number of Movies & Revenue by Genre chart, I learned that 639 drama movies and 284 comedy movies were released in the same time period. That is more than double the number of dramas compared to comedies. Using the bubble chart, we can see that most remakes were in the Action genre.
+														
 														<br></p>
 										
-										 
-										
-										</h2>
+									<h2>Interactive Dashboard</h2>		
+									*disclaimer: embedded dashboard below may not load if tableau public is blocked on your internal network* <br></br>
+									
+																							<div class='tableauPlaceholder' id='viz1741044650688' style='position: relative'><noscript><a href='#'><img alt='Bollywood Movies (2005-2017) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BollywoodMovies_17409909761420&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BollywoodMovies_17409909761420&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BollywoodMovies_17409909761420&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /><param name='ignore_sticky_session' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741044650688');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
 
 								</div>
 							</section>
