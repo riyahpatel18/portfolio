@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Escape Rooms - Data Exploration</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Riya Patel</strong> <span>Portfolio</span></span></a>						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<!-- 	<li><a href="landing.html">Landing</a></li> -->
+							<li><a href="aboutme.html">About Me</a></li>
+							<!-- <li><a href="elements.html">Elements</a></li>-->
+							<li><a href="escaperooms.html">Escape Rooms Project</a></li>
+							<li><a href="bollywoodmovies.html">Bollywood Movies Project</a></li>
+						</ul>
+
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<span class="image">
+										<img src="images/escape banner.png" alt="" />
+									</span>
+									<header class="major">
+										<h1>Escape Rooms - Data Exploration</h1>
+									</header>
+
+						
+									<p>	Tools: Excel, Tableau<br>
+										<!--Skills: Data Cleaning, Dashboarding <br> --->
+										<a href=https://public.tableau.com/shared/7T6WKZPXB?:display_count=n&:origin=viz_share_link" target="blank" class="label">Tableau Public Dashboard</a><br>
+										<a href=https://github.com/riyahpatel18/escaperoomsproject target="blank" class="label">Project Files</a>
+									</p>
+
+										<h2>Overview</h2>
+										<p> I am an avid lover of escape rooms! I have done at least 15 escape rooms since 2017. I have solved escape rooms in Florida, North Carolina, & Massachusetts. Due to my love of escape rooms, I wanted to analyze escape room data. <br><br>
+											
+											I searched for data sets online and was able to find a blog that had created their own <a href="https://roomescapeartist.com/2024/12/29/us-escape-room-industry-report-december-2024/" target="blank" class="label">report</a> on the Escape Rooms within the United States/Puerto Rico for 2024.
+											The blog also had a <a href="https://roomescapeartist.com/2024/12/29/us-escape-room-industry-report-december-2024/" target="blank" class="label">escape room directory</a>, containg cities and escape room names so I used those for my dataset.
+											
+											
+										<h2>Data Preparation</h2>
+											<p>Some cleaning steps I took on the original dataset: <br></p>1. Changed "USA" to "US" to ensure consistency of data</br> 
+												<img src="images/Cleaning Data.png" alt="" style="width: 200px;;height:200;" data-position="center center">
+												<br>
+												2. Used Text to Column and "[" as a delimiter to split Escape Room Type from Company Name (before is seen below)
+
+												<img src="images/Type.png" alt="" style="width: 700px;;height:700;" data-position="center">
+
+												  <br>3. Filled in blank cells in Escape Room Type column with "Regular" (some company names that didn't specify a special type)</uL>
+												<br>4. Organized different locations (right) of same chain into bigger buckets by chain (left) to be able to see which chains are the biggest</ul>
+													<img src="images/escaperoomschain.png" alt="" style="width: 700px;;height:700;" data-position="center center">
+
+													<br></p>
+
+										<h2>Dashboard</h2>
+												<p> I created a dashboard of various graphs and maps to visualize the Escape Rooms dataset. The map on the top shows the number of escape room businesses per state. The darker the state is colored on the map, the more escape rooms there are in comparison to the other states. The filter on the right hand side allows users to select specific chains that will be reflected by what data is shown on the map. The two bar graphs at the bottom of the dashboard show data on a chain level. The Type of Facilities graph breaksdown types of escape room businesses on a chain basis.
+													<br></br>
+													<img src="images/escapedash.png" alt="" style="width:1000px;height:900;" data-position="center center">
+													<br></p>
+														
+										<h2>Insights</h2>
+													<p>
+														Looking at the dashboard, we can see that California, Texas, and Florida have the most escape rooms. This can probably be explained due to those 3 states being the most populated US states. We can also determine that Escapology is the largest chain, with 76 locations across the United States. Something new I learned about escape rooms is that overnight escape rooms exist!
+														
+														<br></Br>In the future, I could analyze the data set to find out which words are used the most frequently when naming Escape Room businesses.
+														<br></p>
+										
+										<h2>Interactive Dashboard</h2>		
+										*Disclaimer: The embedded dashboard below may not show if Tableau Public is blocked on your internal network* <br></br>
+										
+										<div class='tableauPlaceholder' id='viz1741071549265' style='position: relative'><noscript><a href='#'><img alt='Escape Rooms ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8Z&#47;8ZZ6H28QQ&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;8ZZ6H28QQ' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8Z&#47;8ZZ6H28QQ&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1741071549265');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+									</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!-- <ul class="icons">
+								<li><a href="https://github.com/riyahpatel18" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/riyapatel77/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul> 
+						-->
+							<ul class="copyright">
+								<li>&copy; Riya Patel 2025</li><li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
